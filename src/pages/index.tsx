@@ -18,7 +18,7 @@ export default function index() {
                                     사람들이 편히 볼 수 있는 인터페이스와 애니메이션을 구현하는 것을 좋아합니다.
                                 </ListContent>
                                 <ListContent>
-                                    항상 클린코드와 최적화에 대한 생각을 하고 습관처럼 행동합니다.
+                                    항상 정리정돈과 효율성에 대한 생각을 하고 습관처럼 행동합니다.
                                 </ListContent>
                                 <ListContent>
                                     끊임없는 성장을 추구하며, 이를 실현하기 위해 꾸준히 포트폴리오를 유지보수하고,
@@ -108,31 +108,24 @@ export default function index() {
                                     아파트 사전점검의 예약/하자를 등록할 수 있고, 등록된 현황을 리스트, 그래프, 표,
                                     입면도 등으로 쉽게 알아볼 수 있게 제작.
                                 </Explain>
-                                <ListContent>기획된 새 페이지 제작, 요청사항 수정.</ListContent>
+                                <br />
+                                <ExplainGroup>유지보수와 리팩토링</ExplainGroup>
+                                <ListContent>각종 Sentry 오류 수정 </ListContent>
+                                <ListContent> css 프레임워크 적용(사이트 리뉴얼) </ListContent>
+                                <ListContent>코드품질 향상(클린코드 지향) </ListContent>
+                                <ListContent> 반복 사용되는 코드 모듈화 또는 컴포넌트화로 효율적으로 관리</ListContent>
+                                <ListContent>최적화 작업으로 속도개선, code splitting으로 번들사이즈 감소</ListContent>
+                                <br />
+                                <br />
+                                <ExplainGroup>문제와 해결</ExplainGroup>
                                 <ListContent>
-                                    유지보수와 리팩토링
-                                    <DetailExplain>각종 Sentry 오류 수정 </DetailExplain>
-                                    <DetailExplain>css 프레임워크 적용(사이트 리뉴얼) </DetailExplain>
-                                    <DetailExplain>코드품질 향상(클린코드 지향) </DetailExplain>
-                                    <DetailExplain>
-                                        반복 사용되는 코드 모듈화 또는 컴포넌트화로 효율적으로 관리
-                                    </DetailExplain>
-                                    <DetailExplain>
-                                        최적화 작업으로 속도개선, code splitting으로 번들사이즈 감소
-                                    </DetailExplain>
+                                    속도개선: 기존 대시보드 페이지의 진입속도가 4s이상. 네트워크 요청이 직렬구조로
+                                    돼있는 것을 보고 Promise.all로 묶어서 비동기 요청하여 2s 미만으로 감소.
                                 </ListContent>
                                 <ListContent>
-                                    문제와 해결
-                                    <DetailExplain>
-                                        속도개선: 기존 대시보드 페이지의 진입속도가 4s이상. 네트워크 요청이 직렬구조로
-                                        돼있는 것을 보고 Promise.all로 묶어 비동기 요청하여 2s 미만으로 감소.
-                                    </DetailExplain>
-                                    <DetailExplain>
-                                        사용자 UI개선을 위해 디자인 요청: 하자리스트에서 수 천개의 항목을 엑셀로 다운 +
-                                        비밀번호 저장할 시, 엑셀저장 라이브러리 내부문제로 처리하기까지 10초이상 소요.
-                                        사용자의 지루함을 덜어주기 위해, loading-spinner와 progress-bar 디자인 요청 후
-                                        반영.
-                                    </DetailExplain>
+                                    사용자 UI개선을 위해 디자인 요청: 하자리스트에서 수 천개의 항목을 엑셀로 다운 +
+                                    비밀번호 저장할 시, 엑셀저장 라이브러리 내부문제로 처리하기까지 10초이상 소요.
+                                    사용자의 지루함을 덜어주기 위해, loading-spinner와 progress-bar 디자인 요청 후 반영.
                                 </ListContent>
                             </ListGroup>
                         </SubSection>
@@ -151,7 +144,8 @@ export default function index() {
                                 </ListContent>
                                 <ListContent>상태관리, api요청 모듈화, 컴포넌트 구성 등의 아키텍처 설계</ListContent>
                                 <ListContent>
-                                    예약페이지 진입 시 Socket.io에 접속하여, 페이지 이탈 전까지 지속적인 양방향 통신
+                                    유저 입장에서 예약 업데이트 현황을 실시간으로 보기 위해 WebSocket 활용. 예약 페이지
+                                    진입 시 Socket.io에 접속하여 페이지 이탈 전까지 지속적인 양방향 통신
                                 </ListContent>
                                 <ListContent>
                                     하자등록 할 때 사진, 동영상 첨부가능. 파일은 Blob객체로 변환 후 서버에 저장
@@ -188,28 +182,33 @@ export default function index() {
                                     <Link href="https://lolcord.netlify.app">https://lolcord.netlify.app</Link>의
                                     단점들을 개선하여 새로 만든 앱
                                 </Explain>
+                                <br />
+                                <ExplainGroup>LOLCord와 달라진점</ExplainGroup>
                                 <ListContent>
-                                    LOLCord와 달라진점
-                                    <DetailExplain>
-                                        Next.js의 pre-render를 통해 페이지 진입속도 상승(챔피언 페이지 7s이상 → 1s미만)
-                                    </DetailExplain>
-                                    <DetailExplain>
-                                        next/image로 이미지 최적화(avif파일 변환, 이미지 캐싱/리사이징)
-                                    </DetailExplain>
-                                    <DetailExplain>
-                                        반복문 로직 개선, 네트워크 요청 개선, memoization을 활용한 최적화 작업
-                                    </DetailExplain>
-                                    <DetailExplain>
-                                        typescript의 사용으로 런타임이전 발생할 수 있는 에러 사전 차단
-                                    </DetailExplain>
-                                    <DetailExplain>Redux활용하여, 필요한 부분 전역객체로 저장</DetailExplain>
-                                    <DetailExplain>
-                                        RIOT 패치노트 json파일 사용 시, cors 에러발생으로 express.js의 cors미들웨어
-                                        활용으로 해결
-                                    </DetailExplain>
-                                    <DetailExplain>
-                                        express.js에 패치노트 api생성 후 aws-ec2, route53으로 서버배포
-                                    </DetailExplain>
+                                    Next.js의 pre-render를 통해 페이지 진입속도 상승(챔피언 페이지 7s이상 → 1s미만)
+                                </ListContent>
+
+                                <ListContent>
+                                    next/image로 이미지 최적화(avif파일 변환, 이미지 캐싱/리사이징)
+                                </ListContent>
+
+                                <ListContent>
+                                    반복문 로직 개선, 네트워크 요청 개선, memoization을 활용한 최적화 작업
+                                </ListContent>
+
+                                <ListContent>
+                                    typescript의 사용으로 런타임이전 발생할 수 있는 에러 사전 차단
+                                </ListContent>
+
+                                <ListContent>Redux활용하여, 필요한 부분 전역객체로 저장</ListContent>
+
+                                <ListContent>
+                                    RIOT 패치노트 json파일 사용 시, cors 에러발생으로 express.js의 cors미들웨어 활용으로
+                                    해결
+                                </ListContent>
+
+                                <ListContent>
+                                    express.js에 패치노트 api생성 후 aws-ec2, route53으로 서버배포
                                 </ListContent>
                             </ListGroup>
                         </SubSection>
@@ -331,6 +330,7 @@ const ListContent = styled.li`
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 30px;
+    letter-spacing: -0.5px;
 
     ::before {
         content: "•";
@@ -351,13 +351,14 @@ const Explain = styled.p`
     line-height: 30px;
 `;
 
-const DetailExplain = styled.p`
-    font-size: 1.5rem;
-    line-height: 25px;
-    margin-left: 15px;
+const ExplainGroup = styled.p`
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #464646;
 
     ::before {
-        content: "▸";
+        content: "*";
         margin-right: 10px;
     }
 `;
