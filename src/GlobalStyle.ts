@@ -6,11 +6,13 @@ const GlobalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
     }
-    html, body {
+    body {
         padding: 0;
         margin: 0;
         font-size: 10px;
-        overflow: hidden;
+        color: #555;
+        font-family: 'Noto Sans KR', sans-serif;
+        overflow-x: hidden;
     }
     a {
         color: #6485cc;

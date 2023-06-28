@@ -26,10 +26,7 @@ export default class document extends Document {
         return (
             <Html>
                 <Head>
-                    <link
-                        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Serif+KR&family=Single+Day&display=swap"
-                        rel="stylesheet"
-                    />
+                    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
                     <link rel="shortcut icon" href="/favicon/favicon-32x32.png" />
                     <title>RESUME || FRONTEND-DEVELOPER 이동아</title>
                 </Head>
