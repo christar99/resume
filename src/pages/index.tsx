@@ -32,7 +32,7 @@ export default function index() {
                             웹사이트 전체 리팩토링. css프레임워크 vuetify 적용 및 타입스크립트 도입
                         </ContentList>
                         <ContentList>
-                            알고리즘, 네트워킹요청 개선.
+                            알고리즘, 네트워킹요청 개선.{" "}
                             <Emphasis>메인페이지 진입시간 3초 → 1.5초 이하로 감소</Emphasis>
                         </ContentList>
                         <ContentList>
@@ -64,7 +64,7 @@ export default function index() {
                     <CompanyName>LOLBook</CompanyName>
                     <Period>2022.12 - 현재</Period>
                 </SectionTop>
-                <SectionContent>
+                <SectionContent style={{ marginBottom: "40px" }}>
                     <ContentUL>
                         <ContentList>
                             신입 준비 때 만들었던 LOLCord를 개선하여 만든 웹. Next.js, Typescript, Tanstack Query, jotai
@@ -123,10 +123,67 @@ export default function index() {
                                 라이브러리의 작동원리를 이해하고 그에 따른 해결책을 찾습니다.
                             </ContentList>
                         </ContentUL>
-                        <SkillCategory>WEB</SkillCategory>
-                        <ContentUL></ContentUL>
+                        <SkillCategory>Web</SkillCategory>
+                        <ContentUL>
+                            <ContentList>네트워크 통신에 대한 전반적인 구조를 이해하고 있습니다.</ContentList>
+                            <ContentList>SEO(검색엔진 최적화)경험이 있습니다.</ContentList>
+                            <ContentList>웹표준, 웹접근성에 대한 이해를 하고, 준수하려 노력합니다.</ContentList>
+                        </ContentUL>
+                        <SkillCategory>Javascript</SkillCategory>
+                        <ContentUL>
+                            <ContentList>이벤트루프와 비동기통신을 적절히 활용할 수 있습니다.</ContentList>
+                            <ContentList>함수형프로그래밍을 지향하고 불변성을 유지하려 노력합니다.</ContentList>
+                            <ContentList>
+                                CommonJS와 ESModule의 차이점을 이해하고 상황에 따라 적절한 도구를 활용합니다.
+                            </ContentList>
+                        </ContentUL>
+                        <SkillCategory>React</SkillCategory>
+                        <ContentUL>
+                            <ContentList>CSR과 SSR의 작동원리를 이해하고 있습니다.</ContentList>
+                            <ContentList>합리적인 방식으로 컴포넌트를 분리합니다.</ContentList>
+                            <ContentList>
+                                상태관리 라이브러리들의 장단점을 파악하고 최적의 도구를 선택합니다.
+                            </ContentList>
+                            <ContentList>React Testing Library를 사용하여 테스트코드를 작성할 수 있습니다.</ContentList>
+                        </ContentUL>
+                        <SkillCategory>Others</SkillCategory>
+                        <ContentUL>
+                            <ContentList>AWS EC2, nginx등을 이용하여 웹사이트를 배포할 수 있습니다.</ContentList>
+                            <ContentList>
+                                git으로 버전을 관리하고, Github로 원격저장소에 업로드하여 다른 개발자들과 공유할 수
+                                있습니다.
+                            </ContentList>
+                        </ContentUL>
                     </SectionContent>
                 </OtherSection>
+                <Divider />
+                <OtherSection>
+                    <SubTitle>링크</SubTitle>
+                    <SectionContent noPadding={true}>
+                        <ContentUL>
+                            <ContentList>
+                                깃허브: <Link href="https://github.com/christar99">https://github.com/christar99</Link>
+                            </ContentList>
+                            <ContentList>
+                                포트폴리오 LOLBook: <Link href="https://LOLBook.me">https://LOLBook.me</Link>
+                            </ContentList>
+                            <ContentList>
+                                포트폴리오 MyLittleSpace:{" "}
+                                <Link href="https://mylittlespace.site">https://mylittlespace.site</Link>
+                            </ContentList>
+                            <ContentList>
+                                이력서 웹버전(내용은 본 pdf파일과 같습니다):{" "}
+                                <Link href="https://resume.dong-a.me">https://resume.dong-a.me</Link>
+                            </ContentList>
+                        </ContentUL>
+                    </SectionContent>
+                </OtherSection>
+                <Footer>
+                    <Thanks>감사합니다.</Thanks>
+                    <FooterInfo>
+                        FrontEnd Developer <Hash>@Dong-A</Hash>
+                    </FooterInfo>
+                </Footer>
             </PageWrap>
         </OverflowWrap>
     );
@@ -191,7 +248,7 @@ const SectionTop = styled.div`
 `;
 
 const SubTitle = styled.h2`
-    width: 150px;
+    min-width: 150px;
     font-size: 1.2rem;
     font-weight: 700;
 `;
@@ -208,7 +265,7 @@ const Period = styled.p`
 `;
 
 const SectionContent = styled.section<{ noPadding?: boolean }>`
-    padding-left: ${(props) => (props.noPadding ? `10%` : `22%`)};
+    padding-left: ${(props) => (props.noPadding ? 0 : `22%`)};
 `;
 
 const ProejctName = styled.p`
@@ -247,4 +304,26 @@ const SkillCategory = styled.p`
     font-size: 1.3rem;
     font-weight: 900;
     margin-bottom: 10px;
+`;
+
+const Footer = styled.footer`
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+`;
+
+const Thanks = styled.p`
+    font-size: 1.2rem;
+    font-style: italic;
+`;
+
+const FooterInfo = styled.p`
+    font-size: 1rem;
+`;
+
+const Hash = styled.span`
+    color: #6485cc;
 `;
