@@ -17,8 +17,8 @@ export default function index() {
                             구문은 컴포넌트화/모듈화 시켜 유지보수 용이하게 작업한 적 있습니다.
                         </ContentList>
                         <ContentList>
-                            저는 비즈니스가 안정적으로 잘 구현되는 것이 최우선이라 생각하므로 장애대응을 원할하게 하기
-                            위하여 에러트래킹 툴의 기능들을 활용하여 원인을 쉽게 추적할 수 있게 했습니다.
+                            서비스를 안정적으로 운영하기 위해 노력합니다. 에러트래킹 툴을 사용하여 원인을 쉽게 추적하고,
+                            장애 대응을 빠르게 할 수 있습니다
                         </ContentList>
                         <ContentList>
                             유저와 인터렉션하여 유저의 경험을 주는 웹을 개발하는 것을 즐겨합니다. 유저가 주체가 되어
@@ -49,8 +49,8 @@ export default function index() {
                             <Emphasis> 번들사이즈 약 30%감소</Emphasis>
                         </ContentList>
                         <ContentList>
-                            에러트래킹 툴 Sentry 개선, 중요한 에러는 수집하여 예상되는 에러 예방. 비슷한 에러는 Issue
-                            Grouping하고, 필요한 알람만 설정.
+                            에러트래킹 툴 Sentry 개선. 중요한 에러는 수집하여 예상되는 에러 예방. 비슷한 에러는 Issue
+                            Grouping하고 필요한 알람만 설정.
                         </ContentList>
                     </ContentUL>
                     <ProejctName>
@@ -104,9 +104,7 @@ export default function index() {
                         </ContentList>
                         <ContentList>테마설정으로 다크모드, 글꼴, 해상도 설정 구현</ContentList>
                         <ContentList>textArea로 메모장 기능 구현, webAPI의 canvasAPI로 그림판구현</ContentList>
-                        <ContentList>
-                            <Emphasis>메모장과 그림판을 저장하면 AWS S3에 담아두어</Emphasis>, 추후에도 열람/수정 가능
-                        </ContentList>
+                        <ContentList>메모장과 그림판을 저장하면 AWS S3에 담아두어, 추후에도 열람/수정 가능</ContentList>
                     </ContentUL>
                 </SectionContent>
                 <Divider />
@@ -146,14 +144,13 @@ export default function index() {
                         <ContentUL>
                             <ContentList>CSR과 SSR의 작동원리를 이해하고 있습니다.</ContentList>
                             <ContentList>합리적인 방식으로 컴포넌트를 분리합니다.</ContentList>
-                            <ContentList>
-                                상태관리 라이브러리들의 장단점을 파악하고 최적의 도구를 선택합니다.
-                            </ContentList>
+                            <ContentList>상태관리 라이브러리들의 장점을 파악하고 최적의 도구를 선택합니다.</ContentList>
                             <ContentList>React Testing Library를 사용하여 테스트코드를 작성할 수 있습니다.</ContentList>
                         </ContentUL>
                         <SkillCategory>Others</SkillCategory>
                         <ContentUL>
-                            <ContentList>AWS EC2, nginx등을 이용하여 웹사이트를 배포할 수 있습니다.</ContentList>
+                            <ContentList>AWS에서 VPC, Route53과 EC2인스턴스를 생성, 세팅할 수 있습니다.</ContentList>
+                            <ContentList>Nginx를 세팅하고 정적페이지 서빙할 수 있습니다.</ContentList>
                             <ContentList>
                                 Git으로 버전을 관리하고, Github로 원격저장소에 업로드하여 다른 개발자들과 공유할 수
                                 있습니다.
