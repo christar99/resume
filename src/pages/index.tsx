@@ -38,7 +38,8 @@ export default function index() {
                     </ProejctName>
                     <ContentUL>
                         <ContentList>
-                            웹사이트 전체 리팩토링. css프레임워크 vuetify 적용 및 타입스크립트 도입
+                            웹사이트 전체 리팩토링. <Emphasis>css프레임워크 vuetify 적용</Emphasis> 및{" "}
+                            <Emphasis>타입스크립트 도입</Emphasis>
                         </ContentList>
                         <ContentList>
                             알고리즘, 네트워킹요청 개선.{" "}
@@ -58,7 +59,9 @@ export default function index() {
                     </ProejctName>
                     <ContentUL>
                         <ContentList>웹사이트의 전반적인 부분을 첫 구축단계에서부터 개발(90% 이상 기여)</ContentList>
-                        <ContentList>상태관리, api요청 모듈화, 컴포넌트 구성 등의 아키텍처 설계</ContentList>
+                        <ContentList>
+                            <Emphasis>상태관리, api요청 모듈화</Emphasis>, 컴포넌트 구성 등의 아키텍처 설계
+                        </ContentList>
                         <ContentList>
                             하자등록할 때 사진, 동영상 업로드 기능 구현. 파일은 Blob객체로 변환 후 스토리지에 저장.
                         </ContentList>
