@@ -27,49 +27,69 @@ export default function index() {
                     </ContentUL>
                 </Introduce>
                 <Divider />
+                <SubTitle>WORK EXPERINCE</SubTitle>
                 <SectionTop>
-                    <SubTitle>경력</SubTitle>
                     <CompanyName>이음</CompanyName>
                     <Period>2021.08 - 2022.09</Period>
                 </SectionTop>
-                <SectionContent>
-                    <ProejctName>
-                        솔루션 Admin 웹사이트 개발 및 유지보수<ProjectPeriod>2021.08 - 2022.09</ProjectPeriod>
-                    </ProejctName>
-                    <ContentUL>
-                        <ContentList>
-                            웹사이트 전체 리팩토링. <Emphasis>css프레임워크 vuetify 적용</Emphasis> 및{" "}
-                            <Emphasis>타입스크립트 도입</Emphasis>
-                        </ContentList>
-                        <ContentList>
-                            알고리즘, 네트워킹요청 개선.{" "}
-                            <Emphasis>메인페이지 진입시간 3초 → 1.5초 이하로 감소</Emphasis>
-                        </ContentList>
-                        <ContentList>
-                            최적화작업으로 컴포넌트/모듈화, 코드스플리팅 진행.{" "}
-                            <Emphasis> 번들사이즈 약 30%감소</Emphasis>
-                        </ContentList>
-                        <ContentList>
-                            에러트래킹 툴 Sentry 개선. 중요한 에러는 수집하여 예상되는 에러 예방. 비슷한 에러는 Issue
-                            Grouping하고 필요한 알람만 설정.
-                        </ContentList>
-                    </ContentUL>
-                    <ProejctName>
-                        아파트 하자, 예약관리 서비스(채들) <ProjectPeriod>2022.01 - 2022.05</ProjectPeriod>
-                    </ProejctName>
-                    <ContentUL>
-                        <ContentList>웹사이트의 전반적인 부분을 첫 구축단계에서부터 개발(90% 이상 기여)</ContentList>
-                        <ContentList>
-                            <Emphasis>상태관리, api요청 모듈화</Emphasis>, 컴포넌트 구성 등의 아키텍처 설계
-                        </ContentList>
-                        <ContentList>
-                            하자등록할 때 사진, 동영상 업로드 기능 구현. 파일은 Blob객체로 변환 후 스토리지에 저장.
-                        </ContentList>
-                    </ContentUL>
-                </SectionContent>
+                <Project>
+                    <ProejctName>Admin</ProejctName>
+                    <SectionContent>
+                        <ProjectSubtitle>Description.</ProjectSubtitle>
+                        <Description>
+                            입주민이 등록한 아파트의 하자를 건설사의 관리자가 볼 수 있게 만들어진 서비스. <br />
+                            등록된 하자들을 통계내고 수치화하여 표, 그래프등으로 알아보기 쉽게 제작.
+                        </Description>
+                        <ProjectSubtitle>Tech Stack</ProjectSubtitle>
+                        <Description>Vue, Vuetify, Vuex, Scss, Typescript</Description>
+                        <ProjectSubtitle>Contribution</ProjectSubtitle>
+                        <ContentUL>
+                            <ContentList>
+                                웹사이트 전체 리팩토링. <Emphasis>css프레임워크 vuetify 적용</Emphasis> 및{" "}
+                                <Emphasis>타입스크립트 도입</Emphasis>
+                            </ContentList>
+                            <ContentList>
+                                알고리즘, 네트워킹요청 개선.{" "}
+                                <Emphasis>메인페이지 진입시간 3초 → 1.5초 이하로 감소</Emphasis>
+                            </ContentList>
+                            <ContentList>
+                                최적화작업으로 컴포넌트/모듈화, 코드스플리팅 진행.{" "}
+                                <Emphasis> 번들사이즈 약 30%감소</Emphasis>
+                            </ContentList>
+                            <ContentList>
+                                에러트래킹 툴 Sentry 개선. 중요한 에러는 수집하여 예상되는 에러 예방. 비슷한 에러는
+                                Issue Grouping하고 필요한 알람만 설정.
+                            </ContentList>
+                        </ContentUL>
+                    </SectionContent>
+                </Project>
+                <Project>
+                    <ProejctName>채들</ProejctName>
+                    <SectionContent>
+                        <ProjectSubtitle>Description</ProjectSubtitle>
+                        <Description>
+                            아파트의 사전점검을 예약할 수 있고, 행사기간동안 하자를 등록할 수 있는 입주민전용 웹앱.
+                        </Description>
+                        <ProjectSubtitle>Tech Stack</ProjectSubtitle>
+                        <Description>Vue, Vuetify, Vuex, Scss, AWS S3</Description>
+                        <ProjectSubtitle>Contirubution</ProjectSubtitle>
+                        <ContentUL>
+                            <ContentList>
+                                웹사이트의 전반적인 부분을 첫 구축단계에서부터 개발(90% 이상 기여)
+                            </ContentList>
+                            <ContentList>
+                                <Emphasis>상태관리, api요청 모듈화</Emphasis>, 컴포넌트 구성 등의 아키텍처 설계
+                            </ContentList>
+                            <ContentList>
+                                하자등록할 때 사진, 동영상 업로드 기능 구현. 파일은 Blob객체로 변환 후 스토리지에 저장.
+                            </ContentList>
+                        </ContentUL>
+                    </SectionContent>
+                </Project>
+
                 <Divider />
                 <SectionTop>
-                    <SubTitle>프로젝트</SubTitle>
+                    <SubTitle>사이드 프로젝트</SubTitle>
                     <CompanyName>LOLBook</CompanyName>
                     <Period>2022.12 - 현재</Period>
                 </SectionTop>
@@ -114,54 +134,13 @@ export default function index() {
                 <OtherSection>
                     <SubTitle>스킬</SubTitle>
                     <SectionContent noPadding={true}>
-                        <SkillCategory>OverAll</SkillCategory>
                         <ContentUL>
-                            <ContentList>
-                                항상 최신기술이 옳다고 생각하지 않습니다. 상황에 따라 적절한 기술의 선택이 필요하다고
-                                생각합니다.
-                            </ContentList>
-                            <ContentList>
-                                업무에 필요하다면 능숙한 분야가 아니라도 적극적으로 학습하여, 최적의 결과를 만들어낼 수
-                                있도록 노력합니다.
-                            </ContentList>
-                            <ContentList>
-                                오류가 발생할 때 무조건적인 검색보단, 먼저 자신의 프로젝트 상황과 브라우저나
-                                라이브러리의 작동원리를 이해하고 그에 따른 해결책을 찾습니다.
-                            </ContentList>
-                        </ContentUL>
-                        <SkillCategory>Web</SkillCategory>
-                        <ContentUL>
-                            <ContentList>HTTP 네트워크 통신에 대한 전반적인 구조를 이해하고 있습니다.</ContentList>
-                            <ContentList>SEO(검색엔진 최적화)경험이 있습니다.</ContentList>
-                            <ContentList>웹표준, 웹접근성에 대한 이해를 하고, 준수하려 노력합니다.</ContentList>
-                        </ContentUL>
-                        <SkillCategory>Javascript</SkillCategory>
-                        <ContentUL>
-                            <ContentList>이벤트루프와 비동기통신을 적절히 활용할 수 있습니다.</ContentList>
-                            <ContentList>함수형프로그래밍을 지향하고 불변성을 유지하려 노력합니다.</ContentList>
-                            <ContentList>
-                                CommonJS와 ESModule의 차이점을 이해하고 상황에 따라 적절한 도구를 활용합니다.
-                            </ContentList>
-                        </ContentUL>
-                        <SkillCategory>React</SkillCategory>
-                        <ContentUL>
-                            <ContentList>CSR과 SSR의 작동원리를 이해하고 있습니다.</ContentList>
-                            <ContentList>합리적인 방식으로 컴포넌트를 분리합니다.</ContentList>
-                            <ContentList>상태관리 라이브러리들의 장점을 파악하고 최적의 도구를 선택합니다.</ContentList>
-                            <ContentList>React Testing Library를 사용하여 테스트코드를 작성할 수 있습니다.</ContentList>
-                        </ContentUL>
-                        <SkillCategory>Others</SkillCategory>
-                        <ContentUL>
-                            <ContentList>AWS에서 VPC, Route53과 EC2인스턴스를 생성, 세팅할 수 있습니다.</ContentList>
-                            <ContentList>Nginx를 세팅하고 정적페이지 서빙할 수 있습니다.</ContentList>
-                            <ContentList>
-                                Git으로 버전을 관리하고, Github로 원격저장소에 업로드하여 다른 개발자들과 공유할 수
-                                있습니다.
-                            </ContentList>
+                            <ContentList>HTML, CSS, Javascript(ES6+), Typescript</ContentList>
+                            <ContentList>React, Vue, Next.js, React-Query, jotai, styled-component, jest</ContentList>
+                            <ContentList>AWS(S3, EC2, Route53), Express.js, Nginx</ContentList>
                         </ContentUL>
                     </SectionContent>
                 </OtherSection>
-                <Divider />
                 <OtherSection>
                     <SubTitle>링크</SubTitle>
                     <SectionContent noPadding={true}>
@@ -176,10 +155,6 @@ export default function index() {
                                 포트폴리오 MyLittleSpace:{" "}
                                 <Link href="https://mylittlespace.site">https://mylittlespace.site</Link>
                             </ContentList>
-                            {/* <ContentList>
-                                이력서 웹버전(내용은 본 pdf파일과 같습니다):{" "}
-                                <Link href="https://resume.dong-a.me">https://resume.dong-a.me</Link>
-                            </ContentList> */}
                         </ContentUL>
                     </SectionContent>
                 </OtherSection>
@@ -249,42 +224,41 @@ const Divider = styled.hr`
 const SectionTop = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 `;
 
 const SubTitle = styled.h2`
-    min-width: 150px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 20px;
+    color: #209716;
 `;
 
 const CompanyName = styled.h2`
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     flex-grow: 3;
 `;
 
 const Period = styled.p`
-    font-size: 1.2rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+`;
+
+const Project = styled.section`
+    display: flex;
+    flex: 1 150px;
+    width: 100%;
+`;
+
+const ProejctName = styled.h2`
+    width: 150px;
+    font-size: 1.35rem;
     font-weight: 700;
 `;
 
 const SectionContent = styled.section<{ noPadding?: boolean }>`
-    padding-left: ${(props) => (props.noPadding ? 0 : `22%`)};
-`;
-
-const ProejctName = styled.p`
-    font-weight: 700;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-`;
-
-const ProjectPeriod = styled.span`
-    display: inline-block;
-    color: #aaa;
-    margin-left: 10px;
+    width: calc(100% - 150px);
 `;
 
 const ContentUL = styled.ul`
@@ -295,6 +269,18 @@ const ContentUL = styled.ul`
     margin-bottom: 40px;
 `;
 
+const ProjectSubtitle = styled.h2`
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+`;
+
+const Description = styled.p`
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 25px;
+`;
+
 const ContentList = styled.li`
     font-size: 1rem;
     margin-left: 20px;
@@ -303,12 +289,6 @@ const ContentList = styled.li`
 
 const OtherSection = styled.section`
     display: flex;
-`;
-
-const SkillCategory = styled.p`
-    font-size: 1.3rem;
-    font-weight: 900;
-    margin-bottom: 10px;
 `;
 
 const Footer = styled.footer`
