@@ -11,6 +11,11 @@ export default function index() {
                 <Email>이메일: christar99@naver.com</Email>
                 <Phone>연락처: 010-2509-8547</Phone>
                 <Introduce>
+                    <Description>
+                        개발을 통해 비즈니스를 만들어내는 것을 즐기는 2년차 프론트엔드 엔지니어입니다. 사용자의 경험을
+                        좋게 주기위해 항상 고민하고 있습니다. 새로운 기술에 관심이 많고, 항상 최적의 결과를 나타낼 수
+                        있도록 생각합니다. 좋은 직장에서 좋은 동료들과 함께 성장할 수 있으면 좋겠습니다.
+                    </Description>
                     <ContentUL>
                         <ContentList>
                             스타트업에서 웹서비스의 개발/유지보수를 담당했습니다. 웹사이트를 리팩토링하여 반복되는
@@ -33,7 +38,7 @@ export default function index() {
                     <Period>2021.08 - 2022.09</Period>
                 </SectionTop>
                 <Project>
-                    <ProejctName>Admin</ProejctName>
+                    <ProjectName>Admin</ProjectName>
                     <SectionContent>
                         <ProjectSubtitle>Description.</ProjectSubtitle>
                         <Description>
@@ -41,7 +46,7 @@ export default function index() {
                             등록된 하자들을 통계내고 수치화하여 표, 그래프등으로 알아보기 쉽게 제작.
                         </Description>
                         <ProjectSubtitle>Tech Stack</ProjectSubtitle>
-                        <Description>Vue, Vuetify, Vuex, Scss, Typescript</Description>
+                        <Description>Vue, Vuetify, Vuex, SCSS, Typescript</Description>
                         <ProjectSubtitle>Contribution</ProjectSubtitle>
                         <ContentUL>
                             <ContentList>
@@ -64,7 +69,7 @@ export default function index() {
                     </SectionContent>
                 </Project>
                 <Project>
-                    <ProejctName>채들</ProejctName>
+                    <ProjectName>채들</ProjectName>
                     <SectionContent>
                         <ProjectSubtitle>Description</ProjectSubtitle>
                         <Description>
@@ -88,61 +93,82 @@ export default function index() {
                 </Project>
 
                 <Divider />
-                <SectionTop>
-                    <SubTitle>사이드 프로젝트</SubTitle>
-                    <CompanyName>LOLBook</CompanyName>
-                    <Period>2022.12 - 현재</Period>
-                </SectionTop>
-                <SectionContent style={{ marginBottom: "40px" }}>
-                    <ContentUL>
-                        <ContentList>
-                            신입 준비 때 만들었던 LOLCord(게임 LOL의 정보를 볼수있는 웹사이트)를 개선하여 만든 웹.
-                            이전에는 React만을 사용했으나, Next.js, Typescript, Tanstack Query, jotai 등 도입.
-                        </ContentList>
-                        <ContentList>
-                            <Emphasis>Next.js의 Pre-render</Emphasis>를 통해 페이지 진입속도 상승(첫페이지 1.5s →
-                            0.5s미만, 챔피언페이지 7s이상 → 0.5s 미만)
-                        </ContentList>
-                        <ContentList>
-                            <Emphasis>메모이제이션</Emphasis>을 활용해 불필요한 연산 감소시킴. 알고리즘 개선과{" "}
-                            <Emphasis>이미지 최적화</Emphasis>를 통해 성능을 향상시킴.
-                        </ContentList>
-                        <ContentList>
-                            API 요청시 발생하는 CORS를 해결하기 위해 express.js 서버를 중간에 두고 우회하는 방식을 적용.
-                            서버 배포는 AWS 스택을 활용함 (EC2, Route53)
-                        </ContentList>
-                    </ContentUL>
-                </SectionContent>
-                <SectionTop>
-                    <SubTitle></SubTitle>
-                    <CompanyName>My-Little-Space</CompanyName>
-                    <Period>2023.03 - 2023.05</Period>
-                </SectionTop>
-                <SectionContent>
-                    <ContentUL>
-                        <ContentList>웹사이트를 window10 desktop 처럼 사용할 수 있게 만든 페이지.</ContentList>
-                        <ContentList>
-                            사용자 계정은 Cookie에 저장하고 각종 설정 및 이미지, 파일의 uuid등은 localStorage에
-                            저장함으로써 브라우저가 종료되어도 유저가 설정했던 세팅을 자동으로 불러옴
-                        </ContentList>
-                        <ContentList>테마설정으로 다크모드, 글꼴, 해상도 설정 구현</ContentList>
-                        <ContentList>textArea로 메모장 기능 구현, webAPI의 canvasAPI로 그림판구현</ContentList>
-                        <ContentList>메모장과 그림판을 저장하면 AWS S3에 담아두어, 추후에도 열람/수정 가능</ContentList>
-                    </ContentUL>
-                </SectionContent>
+
+                <SubTitle>사이드 프로젝트</SubTitle>
+                <Project>
+                    <SideProjectName>
+                        <ProjectName>LOLBook</ProjectName>
+                        <Period>(2022.12 - 현재)</Period>
+                    </SideProjectName>
+                    <SectionContent>
+                        <ProjectSubtitle>Description</ProjectSubtitle>
+                        <Description>
+                            게임 리그오브레전드의 정보들을 볼수 있는 웹사이트.
+                            <br />
+                            LOLCord(1년차 재직중 만든 사이드프로젝트)를 개선하여 만든 웹.
+                        </Description>
+                        <ProjectSubtitle>Tech Stack</ProjectSubtitle>
+                        <Description>Typescript, Next.js, React-Query, jotai, Express.js, Styled-Component</Description>
+                        <ProjectSubtitle>Contribution</ProjectSubtitle>
+                        <ContentUL>
+                            <ContentList>
+                                <Emphasis>Next.js의 Pre-render</Emphasis>를 통해 페이지 진입속도 상승(첫페이지 1.5s →
+                                0.5s미만, 챔피언페이지 7s이상 → 0.5s 미만)
+                            </ContentList>
+                            <ContentList>
+                                <Emphasis>메모이제이션</Emphasis>을 활용해 불필요한 연산 감소시킴. 알고리즘 개선과{" "}
+                                <Emphasis>이미지 최적화</Emphasis>를 통해 성능을 향상시킴.
+                            </ContentList>
+                            <ContentList>
+                                API 요청시 발생하는 CORS를 해결하기 위해 express.js 서버를 중간에 두고 우회하는 방식을
+                                적용. 서버 배포는 AWS 스택을 활용함 (EC2, Route53)
+                            </ContentList>
+                        </ContentUL>
+                    </SectionContent>
+                </Project>
+
+                <Project>
+                    <SideProjectName>
+                        <ProjectName style={{ fontSize: "1.2rem" }}>My-Little-Space</ProjectName>
+                        <Period style={{ fontSize: "1rem" }}>(2023.03 - 2023.05)</Period>
+                    </SideProjectName>
+                    <SectionContent>
+                        <ProjectSubtitle>Description</ProjectSubtitle>
+                        <Description>
+                            웹사이트를 window10 desktop 처럼 사용할 수 있게 만든 페이지. <br />
+                            window 10과 같이 메모장, 그림판기능이 있고 해상도, 테마, 배경화면등의 설정을 할 수 있음.
+                        </Description>
+                        <ProjectSubtitle>Tech Stack</ProjectSubtitle>
+                        <Description>Typescript, Next.js, jotai, AWS S3 </Description>
+                        <ProjectSubtitle>Contribution</ProjectSubtitle>
+                        <ContentUL>
+                            <ContentList>
+                                사용자 계정은 Cookie에 저장하고 각종 설정 및 이미지, 파일의 uuid등은 localStorage에
+                                저장함으로써 브라우저가 종료되어도 유저가 설정했던 세팅을 자동으로 불러옴
+                            </ContentList>
+                            <ContentList>textArea로 메모장 기능 구현, webAPI의 canvasAPI로 그림판구현</ContentList>
+                            <ContentList>
+                                메모장과 그림판을 저장하면 AWS S3에 담아두어, 추후에도 열람/수정 가능
+                            </ContentList>
+                        </ContentUL>
+                    </SectionContent>
+                </Project>
                 <Divider />
                 <OtherSection>
-                    <SubTitle>스킬</SubTitle>
+                    <SubTitle style={{ fontSize: "1.5rem", marginBottom: "10px" }}>스킬</SubTitle>
                     <SectionContent noPadding={true}>
                         <ContentUL>
                             <ContentList>HTML, CSS, Javascript(ES6+), Typescript</ContentList>
-                            <ContentList>React, Vue, Next.js, React-Query, jotai, styled-component, jest</ContentList>
+                            <ContentList>
+                                React, Vue, Vuex, Next.js, React-Query, jotai, styled-component,
+                                <br /> jest, react-testing-library
+                            </ContentList>
                             <ContentList>AWS(S3, EC2, Route53), Express.js, Nginx</ContentList>
                         </ContentUL>
                     </SectionContent>
                 </OtherSection>
                 <OtherSection>
-                    <SubTitle>링크</SubTitle>
+                    <SubTitle style={{ fontSize: "1.5rem", marginBottom: "10px" }}>링크</SubTitle>
                     <SectionContent noPadding={true}>
                         <ContentUL>
                             <ContentList>
@@ -182,7 +208,7 @@ const PageWrap = styled.div`
 
 const Emphasis = styled.p`
     display: inline-block;
-    text-decoration: underline;
+    color: #cf901a;
     font-weight: 700;
 `;
 
@@ -195,7 +221,7 @@ const ResumeTitle = styled.h1`
 const ResumeSubTitle = styled.h2`
     font-size: 1.4rem;
     font-weight: 700;
-    color: #ccc;
+    color: #aaa;
     margin-bottom: 30px;
 `;
 
@@ -234,14 +260,20 @@ const SubTitle = styled.h2`
     color: #209716;
 `;
 
+const SideProjectName = styled.div`
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+`;
+
 const CompanyName = styled.h2`
     font-size: 1.5rem;
     font-weight: 700;
-    flex-grow: 3;
 `;
 
 const Period = styled.p`
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-weight: 700;
 `;
 
@@ -251,7 +283,7 @@ const Project = styled.section`
     width: 100%;
 `;
 
-const ProejctName = styled.h2`
+const ProjectName = styled.h2`
     width: 150px;
     font-size: 1.35rem;
     font-weight: 700;
@@ -289,6 +321,8 @@ const ContentList = styled.li`
 
 const OtherSection = styled.section`
     display: flex;
+    flex-direction: column;
+    gap: 5px;
 `;
 
 const Footer = styled.footer`
