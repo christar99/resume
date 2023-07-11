@@ -12,9 +12,9 @@ export default function index() {
                 <Phone>연락처: 010-2509-8547</Phone>
                 <Introduce>
                     <Description>
-                        개발을 통해 비즈니스를 만들어내는 것을 즐기는 2년차 프론트엔드 엔지니어입니다. 사용자의 경험을
-                        좋게 주기위해 항상 고민하고 있습니다. 새로운 기술에 관심이 많고, 항상 최적의 결과를 나타낼 수
-                        있도록 생각합니다. 좋은 직장에서 좋은 동료들과 함께 성장할 수 있으면 좋겠습니다.
+                        몰입하는 것을 즐기는 2년차 프론트엔드 엔지니어입니다. 더 나은 사용자 경험을 주기위해 항상
+                        고민하고 있습니다. 새로운 기술에 관심이 많고, 최적의 결과를 나타낼 수 있도록 연구합니다. 좋은
+                        직장에서 좋은 동료들과 함께 성장할 수 있으면 좋겠습니다.
                     </Description>
                     <ContentUL>
                         <ContentList>
@@ -42,7 +42,7 @@ export default function index() {
                     <SectionContent>
                         <ProjectSubtitle>Description.</ProjectSubtitle>
                         <Description>
-                            입주민이 등록한 아파트의 하자를 건설사의 관리자가 볼 수 있게 만들어진 서비스. <br />
+                            입주민이 등록한 아파트 하자를 건설사의 관리자가 볼 수 있게 만들어진 서비스. <br />
                             등록된 하자들을 통계내고 수치화하여 표, 그래프등으로 알아보기 쉽게 제작.
                         </Description>
                         <ProjectSubtitle>Tech Stack</ProjectSubtitle>
@@ -83,7 +83,7 @@ export default function index() {
                                 웹사이트의 전반적인 부분을 첫 구축단계에서부터 개발(90% 이상 기여)
                             </ContentList>
                             <ContentList>
-                                <Emphasis>상태관리, api요청 모듈화</Emphasis>, 컴포넌트 구성 등의 아키텍처 설계
+                                상태관리, api요청 모듈화 컴포넌트 구성등의 <Emphasis>아키텍처 설계</Emphasis>.
                             </ContentList>
                             <ContentList>
                                 하자등록할 때 사진, 동영상 업로드 기능 구현. 파일은 Blob객체로 변환 후 스토리지에 저장.
@@ -105,19 +105,22 @@ export default function index() {
                         <Description>
                             게임 리그오브레전드의 정보들을 볼수 있는 웹사이트.
                             <br />
-                            LOLCord(1년차 재직중 만든 사이드프로젝트)를 개선하여 만든 웹.
+                            LOLCord(1년차 재직 중 만든 사이드프로젝트)를 개선하여 만든 웹.
                         </Description>
                         <ProjectSubtitle>Tech Stack</ProjectSubtitle>
                         <Description>Typescript, Next.js, React-Query, jotai, Express.js, Styled-Component</Description>
                         <ProjectSubtitle>Contribution</ProjectSubtitle>
                         <ContentUL>
                             <ContentList>
-                                <Emphasis>Next.js의 Pre-render</Emphasis>를 통해 페이지 진입속도 상승(첫페이지 1.5s →
-                                0.5s미만, 챔피언페이지 7s이상 → 0.5s 미만)
+                                페이지 렌더링속도 상승.{" "}
+                                <Emphasis>첫페이지 1.5s → 0.5s미만, 챔피언페이지 7s이상 → 0.5s 미만</Emphasis>.
+                                Next.js의 Pre-render로 빌드타임 때 HTML파일 생성. next/dynamic으로 초기렌더에
+                                관여하지않는 컴포넌트 lazy-loading.
                             </ContentList>
                             <ContentList>
-                                <Emphasis>메모이제이션</Emphasis>을 활용해 불필요한 연산 감소시킴. 알고리즘 개선과{" "}
-                                <Emphasis>이미지 최적화</Emphasis>를 통해 성능을 향상시킴.
+                                메모이제이션을 활용해 불필요한 연산 감소시킴.{" "}
+                                <Emphasis>next/image를 통해 이미지최적화 작업</Emphasis>(이미지파일 리사이징, 파일확장자
+                                변경)
                             </ContentList>
                             <ContentList>
                                 API 요청시 발생하는 CORS를 해결하기 위해 express.js 서버를 중간에 두고 우회하는 방식을
@@ -207,7 +210,7 @@ const PageWrap = styled.div`
 `;
 
 const Emphasis = styled.p`
-    display: inline-block;
+    display: inline;
     color: #cf901a;
     font-weight: 700;
 `;
