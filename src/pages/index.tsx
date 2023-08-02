@@ -23,11 +23,11 @@ export default function index() {
                         </ContentList>
                         <ContentList>
                             서비스를 안정적으로 운영하기 위해 노력합니다. 에러트래킹 툴을 사용하여 원인을 쉽게 추적하고,
-                            장애 대응을 빠르게 할 수 있습니다
+                            장애 대응을 빠르게 할 수 있습니다.
                         </ContentList>
                         <ContentList>
-                            유저와 인터렉션하여 유저의 경험을 주는 웹을 개발하는 것을 즐겨합니다. 유저가 주체가 되어
-                            window10의 기본적인 기능을 사용할 수 있는 웹사이트를 만든적이 있습니다.
+                            단순히 주어진 개발 업무도 중요하지만, 서비스를 함께 구상/기획하는 일을 좋아합니다. 개선이
+                            필요한 업무에 대해 함께 고민하고 토론하는 것을 좋아합니다.
                         </ContentList>
                     </ContentUL>
                 </Introduce>
@@ -163,8 +163,8 @@ export default function index() {
                         <ContentUL>
                             <ContentList>HTML, CSS, Javascript(ES6+), Typescript</ContentList>
                             <ContentList>
-                                React, Vue, Vuex, Next.js, React-Query, jotai, styled-component,
-                                <br /> jest, react-testing-library
+                                React, Vue, Vuex, Next.js, React-Query, jotai, zustand,
+                                <br /> styled-component, jest
                             </ContentList>
                             <ContentList>AWS(S3, EC2, Route53), Express.js, Nginx</ContentList>
                         </ContentUL>
