@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
+
 export default function index() {
     return (
         <OverflowWrap>
@@ -108,7 +109,7 @@ export default function index() {
                             LOLCord(1년차 재직 중 만든 사이드프로젝트)를 개선하여 만든 웹.
                         </Description>
                         <ProjectSubtitle>Tech Stack</ProjectSubtitle>
-                        <Description>Typescript, Next.js, React-Query, jotai, Express.js, Styled-Component</Description>
+                        <Description>Typescript, Next.js, Zustand, Styled-Component, <br />AWS(Lambda, DynamoDB, API Gateway)</Description>
                         <ProjectSubtitle>Contribution</ProjectSubtitle>
                         <ContentUL>
                             <ContentList>
@@ -123,8 +124,12 @@ export default function index() {
                                 변경)
                             </ContentList>
                             <ContentList>
-                                API 요청시 발생하는 CORS를 해결하기 위해 express.js 서버를 중간에 두고 우회하는 방식을
-                                적용. 서버 배포는 AWS 스택을 활용함 (EC2, Route53)
+                                API요청 할 때 게임의 필요한 데이터만 사용하기 위해, AWS-Lambda에서 데이터 가공 후 DynamoDB에 저장.
+                                Lambda와 API-Gateway를 통해 api를 직접 만든 후 네트워크 요청.
+                            </ContentList>
+                            <ContentList>
+                                랭킹페이지에서 네트워킹요청으로 전체페이지를 한번에 호출할 수 없으므로, DynamoDB에 저장 후 필요한 페이지만 호출해서 작업.
+                                최대한 최신의 정보만을 제공하기 위해 스케쥴링작업으로 api를 3시간마다 호출하여 저장.
                             </ContentList>
                         </ContentUL>
                     </SectionContent>
@@ -149,7 +154,7 @@ export default function index() {
                                 사용자 계정은 Cookie에 저장하고 각종 설정 및 이미지, 파일의 uuid등은 localStorage에
                                 저장함으로써 브라우저가 종료되어도 유저가 설정했던 세팅을 자동으로 불러옴
                             </ContentList>
-                            <ContentList>textArea로 메모장 기능 구현, webAPI의 canvasAPI로 그림판구현</ContentList>
+                            <ContentList>textArea로 메모장 기능 구현, canvasAPI로 그림판구현</ContentList>
                             <ContentList>
                                 메모장과 그림판을 저장하면 AWS S3에 담아두어, 추후에도 열람/수정 가능
                             </ContentList>
@@ -163,10 +168,9 @@ export default function index() {
                         <ContentUL>
                             <ContentList>HTML, CSS, Javascript(ES6+), Typescript</ContentList>
                             <ContentList>
-                                React, Vue, Vuex, Next.js, React-Query, jotai, zustand,
-                                <br /> styled-component, jest
+                                React, Vue, Next.js, Redux, jotai, zustand, styled-component, Sass
                             </ContentList>
-                            <ContentList>AWS(S3, EC2, Route53), Express.js, Nginx</ContentList>
+                            <ContentList>AWS(S3, EC2, Route53, Lambda, DynamoDB), Express.js</ContentList>
                         </ContentUL>
                     </SectionContent>
                 </OtherSection>
